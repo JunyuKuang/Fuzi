@@ -124,7 +124,7 @@ internal struct LinkedCNodes: Sequence, IteratorProtocol {
     return cursor
   }
   
-  init(head: xmlNodePtr?, types: [xmlElementType] = [XML_ELEMENT_NODE]) {
+  init(head: xmlNodePtr?, types: [xmlElementType] = [XML_ELEMENT_NODE, XML_TEXT_NODE]) {
     self.head = head
     self.cursor = head
     self.types = types
