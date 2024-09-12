@@ -146,7 +146,7 @@ open class XMLDocument {
   }
   
   deinit {
-    xmlFreeDoc(cDocument)
+    // xmlFreeDoc(cDocument)
   }
   
   // MARK: - XML Namespaces
